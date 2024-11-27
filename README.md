@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Shop Yangu
 
-## Getting Started
+This is a platform for managing e-commerce products, and shops. The app allows administrators to manage products, shops, and view various metrics through an admin panel and dashboard. It also includes features for CRUD operations and real-time updates via an API powered by json-server that runs locally.
 
-First, run the development server:
+## Features
+
+- **Admin Panel:** Allows administrators to manage shops and products, including creating, updating, and deleting entries.
+- **Metrics:** Provides insights such as stock levels, top shops, and distribution of product stock.
+- **Product Management:** Admins can add new products, update their details, and remove them from the system.
+- **Shop Management:** Admins can create new shops, assign products to shops, and remove shops (with restrictions if the shop has active products).
+- **Real-Time Updates:** The admin dashboard, shops and products page update in real-time as changes are made.
+
+## Instructions to run the app locally
+
+### Prerequisites
+
+Make sure you have the following tools installed in your machine:
+
+- Nodejs
+- npm
+- Git
+
+## Installation Steps
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/Jacobkyalo/ShopYangu.git
+```
+
+2. Change into the project directory
+
+```bash
+cd ShopYangu
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Start the json-server
+
+```bash
+npm run json-server
+```
+
+5. Start the app development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. Open your browser and navigate to `http://localhost:3000` to view the app
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Json server will run on port 5000, and the app runs on port 3000. Make sure these ports are not in use before running the app.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+You can view the shops from json server by navigating to `http://localhost:5000/shops` and products by navigating to `http://localhost:5000/products`.
 
-## Learn More
+Alternatively, you can view the live app [here](https://shop-yangu-demo.vercel.app/). Bare in mind that the live app does not have a live json server, so you must run the json-server locally to see real-time updates using the instructions above. Failure to which the app will not display any data.
 
-To learn more about Next.js, take a look at the following resources:
+## Description of the app and its features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The platform is designed to manage products and shops efficiently. As an admin, you can:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Manage Products:** Add, edit, and delete products. You can also view product stock levels and categorize products based on their stock status.
+- **Manage Shops:** Create, edit and remove shops. Shops can be associated with products. Deleting a shop is restricted if there are products linked to it.
+- **View Metrics:** The app provides metrics such as stock levels, the distribution of product stock, and top shops based on stock levels.
 
-## Deploy on Vercel
+## Local links to the app
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Products:** `http://localhost:3000/products`
+- **Shops:** `http://localhost:3000/shops`
+- **Metrics:** `http://localhost:3000/metrics`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+You can follow these links to navigate to the respective pages after running the app locally.
+
+## Testing the dashboard
+
+After running the app locally, each page contains buttons that can help you navigate to different sections/pages of the app. For example **Add Shop** and **Add Product** buttons on the shops and products pages respectively. You can use these buttons to test the CRUD operations of the app.
