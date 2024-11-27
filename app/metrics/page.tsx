@@ -108,6 +108,7 @@ export default function Metrics() {
                   tickLine={false}
                   tickMargin={10}
                   axisLine={false}
+                  tickFormatter={(value) => value.slice(0, 4) + "..."}
                 />
                 <ChartTooltip cursor={false} content={<CustomTooltip />} />
                 <Bar
@@ -147,6 +148,7 @@ export default function Metrics() {
                   tickLine={false}
                   tickMargin={10}
                   axisLine={false}
+                  tickFormatter={(value) => value.slice(0, 4) + "..."}
                 />
                 <ChartTooltip
                   cursor={false}
