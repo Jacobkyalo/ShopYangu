@@ -1,0 +1,66 @@
+{
+  "shops": [
+    {
+      "id": "1",
+      "name": "Tech Store",
+      "logo": "/assets/avatars/avatar1.jpg",
+      "description": "Shop for selling tech gadgets"
+    },
+    {
+      "id": "de0a",
+      "name": "Delex Technologies",
+      "description": "We deal with all kinds of tech stuff",
+      "logo": "C:\\fakepath\\shop.jpeg"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop",
+      "price": 1200,
+      "stockLevel": 12,
+      "description": "Dell laptop with 8gb ram and 256gb ssd",
+      "image": "/assets/avatars/avatar2.jpg",
+      "shop": "Tech Store"
+    },
+    {
+      "id": "4676",
+      "name": "Extension",
+      "description": "A power extension cable",
+      "image": "C:\\fakepath\\laptop.jpeg",
+      "price": "500",
+      "stockLevel": "10",
+      "shop": "Jack electronics",
+      "productShop": "Jack electronics"
+    },
+    {
+      "id": "bd2a",
+      "name": "Adapter",
+      "description": "Dell laptop power adapter",
+      "image": "C:\\fakepath\\laptop.jpeg",
+      "price": "1500",
+      "stockLevel": "1",
+      "shop": "Delex Technologies",
+      "productShop": "Delex Technologies"
+    },
+    {
+      "id": "e5fc",
+      "name": "Macbook pro",
+      "description": "Macbook pro",
+      "image": "C:\\fakepath\\laptop.jpeg",
+      "price": "200000",
+      "stockLevel": 30,
+      "shop": "Delex Technologies",
+      "productShop": "Delex Technologies"
+    },
+    {
+      "id": "e266",
+      "name": "Infinix phone",
+      "description": "Good refurbished Infinix phone",
+      "image": "C:\\fakepath\\laptop.jpeg",
+      "price": "20000",
+      "stockLevel": "0",
+      "shop": "Tech Store"
+    }
+  ]
+}
