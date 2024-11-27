@@ -44,7 +44,7 @@ export const AppSidebar = () => {
       <SidebarHeader className="text-3xl font-bold ml-2 mt-2 text-primary">
         <Link href="/">Shop Yangu</Link>
       </SidebarHeader>
-      <SidebarContent>
+      <SidebarContent className="bg-white">
         <SidebarGroup>
           <SidebarGroupLabel className="sr-only">Links</SidebarGroupLabel>
           <SidebarGroupContent>
